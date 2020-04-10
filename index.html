@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<style>
+    .row {
+        margin-top: 25vh;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s8 offset-s2">
+            <div class="card-panel message-generator">
+                <form>
+                    <label for="message">Enter a Secret Message</label>
+                    <input id="message-input" type="text" name="message">
+                    <button class="btn">Create</button>
+                </form>
+            </div>
+            <div class="card-panel message-container hide">
+                <h3 class="message"> </h3>
+                <a href="/"><button class="btn">Create your Own Link</button></a>
+            </div>
+            <div class="share hide">
+                <h5>Share this link with a friend</h5>
+                <p>Link automatically copied to your clipboard!</p>
+
+                <input readonly type="text" id="link-input">
+                <a href="/"><button class="btn">Create a new link</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
